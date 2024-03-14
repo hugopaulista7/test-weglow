@@ -1,0 +1,7 @@
+<ion-button [disabled]="isLoading" (click)="handleClick()">
+  <ion-label *ngIf="!isLoading">Click Me</ion-label>
+  <ion-label *ngIf="isLoading" class="spinner-label">
+    <ion-spinner></ion-spinner>
+    Loading
+  </ion-label>
+</ion-button>
